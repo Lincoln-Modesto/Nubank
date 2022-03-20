@@ -34,3 +34,38 @@ a{
     opacity: 0.9;
   }
 }
+
+.link{
+  display: inline-block;
+  color: $primary-normal;
+  background-image: url('../../assets/svg/icon-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  font-size: 18px;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+
+  &::after{
+    content: '';
+    display: block;
+    top: 75%;
+    left: 56px;
+    width: 0%;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s ease;
+
+    position: absolute;
+    background-color: $secondary-light;
+  }
+
+  &:hover{
+    opacity: 0.8;
+    padding-left: 64px;
+    background-position: 8px 50%;
+
+    &::after{
+      width: 80%;
+    }
+  }
+}
