@@ -21,6 +21,7 @@ body{
   
   scroll-behavior: smooth;
   background-color: $white-dark;
+  overflow-x: hidden;
 }
 
 svg, img{
