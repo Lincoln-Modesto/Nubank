@@ -246,6 +246,28 @@
   }
 }
 
+.svg-invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .svg-invite {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+.bg-invite {
+  height: 100vh;
+  overflow: hidden;
+}
+
 h1 {
   color: #232224;
   font-family: "Sora", sans-serif;
