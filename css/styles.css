@@ -437,6 +437,18 @@ a:hover {
   width: 80%;
 }
 
+.button-app {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.button-app:hover {
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 .s-0 {
   margin: 0;
   padding: 0;
@@ -1323,7 +1335,7 @@ header {
 }
 
 .bg-icon-contactless::after {
-  background-image: url("../../assets/icon-contactless.svg");
+  background-image: url("../../assets/svg/icon-contactless.svg");
   background-size: cover;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -1813,6 +1825,129 @@ header {
   100% {
     -webkit-transform: translate3d(10px, -40px, 0);
             transform: translate3d(10px, -40px, 0);
+  }
+}
+
+.fignu3-card-verse {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  transform-box: fill-box;
+  -webkit-animation: fignu3-card-verse-move 3s ease infinite alternate;
+          animation: fignu3-card-verse-move 3s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu3-card-verse-move {
+  0% {
+    -webkit-transform: translate3d(0, -40px, 0) rotate(0deg);
+            transform: translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 20px, 0) rotate(5deg);
+            transform: translate3d(0, 20px, 0) rotate(5deg);
+  }
+}
+
+@keyframes fignu3-card-verse-move {
+  0% {
+    -webkit-transform: translate3d(0, -40px, 0) rotate(0deg);
+            transform: translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 20px, 0) rotate(5deg);
+            transform: translate3d(0, 20px, 0) rotate(5deg);
+  }
+}
+
+.fignu3-card-front {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  transform-box: fill-box;
+  -webkit-animation: fignu3-card-front-move 3s ease 1s infinite alternate;
+          animation: fignu3-card-front-move 3s ease 1s infinite alternate;
+}
+
+@-webkit-keyframes fignu3-card-front-move {
+  0% {
+    -webkit-transform: translate3d(0, -40px, 0) rotate(0deg);
+            transform: translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 20px, 0) rotate(-5deg);
+            transform: translate3d(0, 20px, 0) rotate(-5deg);
+  }
+}
+
+@keyframes fignu3-card-front-move {
+  0% {
+    -webkit-transform: translate3d(0, -40px, 0) rotate(0deg);
+            transform: translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 20px, 0) rotate(-5deg);
+            transform: translate3d(0, 20px, 0) rotate(-5deg);
+  }
+}
+
+.fignu3-shadow {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  transform-box: fill-box;
+  fill-opacity: 0.15;
+  -webkit-animation: fignu3-shadow 3s ease 1s infinite alternate;
+          animation: fignu3-shadow 3s ease 1s infinite alternate;
+}
+
+@-webkit-keyframes fignu3-shadow {
+  0% {
+    fill-opacity: 0.15;
+  }
+  100% {
+    fill-opacity: 0.4;
+  }
+}
+
+@keyframes fignu3-shadow {
+  0% {
+    fill-opacity: 0.15;
+  }
+  100% {
+    fill-opacity: 0.4;
+  }
+}
+
+.fignu4-letter-n {
+  -webkit-animation: fignu4-letter 4s ease infinite alternate;
+          animation: fignu4-letter 4s ease infinite alternate;
+}
+
+.fignu4-letter-u {
+  -webkit-animation: fignu4-letter 4s ease infinite alternate;
+          animation: fignu4-letter 4s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu4-letter {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 0 400;
+    stroke-opacity: 1;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes fignu4-letter {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 0 400;
+    stroke-opacity: 1;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
   }
 }
 /*# sourceMappingURL=styles.css.map */
