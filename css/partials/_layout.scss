@@ -239,3 +239,45 @@ $container-s: 540px;
   height: 100vh;
   overflow: hidden;
 }
+
+.flex-space-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-top{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.icon-networks{
+  max-width: 48px;
+  padding: 8px;
+}
+
+.bt-purple{
+  border-top: 1px solid $secondary-light;
+}
+
+.list{
+  list-style: none;
+
+  li{
+    margin-bottom: 12px;
+  }
+
+  a{
+    color: $secondary-light;
+    transition: 0.5s ease;
+
+    &:hover{
+      color: $white-dark;
+    }
+  }
+}
+
+footer{
+  background: linear-gradient(220.94deg, #a950c4 14.43%, #82269e 85.28%);
+}
